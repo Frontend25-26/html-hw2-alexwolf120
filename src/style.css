@@ -1,6 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+
 body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px;
+    color: #f0f0f0;
+    box-sizing: border-box;
+    background-image: url('img/bkg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0);
+    border-radius: 10px;
+}
+
+article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(40, 40, 40, 0.35);
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(40, 40, 40, 0.5);
+    border-radius: 8px;
+}
+
+header nav th {
+    text-align: center;
+    color: white;
+    padding: 15px;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+header nav td, header nav th[scope="row"] {
+    background-color: rgba(60, 60, 60, 0.5);
+    color: #e0e0e0;
+    padding: 10px;
+}
+
+header nav a {
+    color: #a8c6e0;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+header nav a:hover {
+    color: #ff0000;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px 15px;
+    background-color: #4a6b8c;
+    color: white;
+    border-radius: 5px;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+.nav-link:hover {
+    background-color: #3a7c43;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.large {
+    width: 1000px;
+    height: 600px;
+    border-radius: 8px;
+}
+
+.medium {
+    width: 300px;
+    height: 150px;
+}
+
+.small {
+    width: 150px;
+    height: 100px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+}
+
+.special {
+    width: 250px;
+    height: 150px;
+}
+
+.operator {
+    width: 250px;
+    height: 200px;
     margin: 0;
     padding: 0;
+}
 
-    background: #292929;
+.result {
+    width: 400px;
+    height: 800px;
+    border-radius: 8px;
+}
+
+.table-base {
+    width: 100%;
+    margin: 20px 0;
+    background-color: rgba(50, 50, 50, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.table-base th, .table-base td {
+    border: 1px solid #555;
+    padding: 12px;
+}
+
+.table-base th {
+    color: white;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+.bio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(50, 50, 50, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.bio-table th, .bio-table td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: left;
+}
+
+.bio-table th {
+    color: white;
+    text-align: center;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+.equipment-table, .operators-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(50, 50, 50, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.equipment-table th, .equipment-table td,
+.operators-table th, .operators-table td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: center;
+    width: 25%;
+}
+
+.equipment-table figure {
+    margin: 10px 0;
+}
+
+.equipment-table figcaption {
+    margin: 8px 0;
+}
+
+.equipment-table label {
+    display: block;
+    margin: 5px 0;
+}
+
+.operators-table th[scope="row"] figure {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+table caption {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #e0e0e0;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+.tachanka-quote {
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 25px auto;
+    padding: 25px 30px;
+    background: rgba(58, 90, 124, 0.9);
+    border-radius: 25px;
+    color: white;
+    line-height: 1.5;
+    position: relative;
+    max-width: 600px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.tachanka-quote::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgba(74, 107, 140, 0.9);
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.tachanka-quote footer {
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+    font-size: 0.9em;
+    font-style: normal;
+    margin-top: 15px;
+    color: #e8f4ff;
+    font-weight: bold;
+}
+
+.custom-button {
+    padding: 12px 25px;
+    background-color: #4a6b8c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px auto;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+.custom-button:hover {
+    background-color: #3a5a7c;
+}
+
+.image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    position: relative;
+}
+
+.image-button::after {
+    content: "Нажмите чтобы прослушать аудио";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    
+    pointer-events: none;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+.image-button::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border: 5px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    z-index: 100;
+}
+
+.image-button:hover::after,
+.image-button:hover::before {
+    opacity: 1;
+}
+
+.image-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hidden-audio {
+    display: none;
+}
+
+.operator-with-audio figcaption {
+    text-align: center;
+    margin-top: 10px;
+    color: #e0e0e0;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+.operator-with-audio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(60, 60, 60, 0.9);
+    color: #e0e0e0;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+.form-input::placeholder {
+    color: #999;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+.form-button {
+    padding: 10px 20px;
+    margin: 8px;
+    background-color: #4a6b8c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+.form-button:hover {
+    background-color: #3a5a7c;
+}
+
+fieldset {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(50, 50, 50, 0.8);
+    border: 1px solid #555;
+    color: #e0e0e0;
+    border-radius: 8px;
+    font-family: 'BBH Sans Bogle', Arial, sans-serif;
+}
+
+
+.video-player {
+    width: 1000px;
+    height: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.site-footer {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: #e0e0e0;
+}
+
+.site-footer form {
+    text-align: center;
 }
