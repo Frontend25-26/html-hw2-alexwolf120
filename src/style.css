@@ -15,7 +15,10 @@ body {
     background-color: #000;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     text-align: center;
     color: #ffffff;
     font-family: 'BBH Sans Bogle', Arial, sans-serif;
@@ -41,7 +44,7 @@ article {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-header nav table {
+.nav-table {
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -49,7 +52,7 @@ header nav table {
     border-radius: 8px;
 }
 
-header nav th {
+.nav-table th {
     text-align: center;
     color: white;
     padding: 15px;
@@ -57,20 +60,21 @@ header nav th {
     font-size: 1.2em;
 }
 
-header nav td, header nav th[scope="row"] {
+.nav-table td,
+.nav-table th[scope="row"] {
     background-color: rgba(60, 60, 60, 0.5);
     color: #e0e0e0;
     padding: 10px;
 }
 
-header nav a {
+.nav-table a {
     color: #a8c6e0;
     text-decoration: none;
     font-weight: bold;
     font-family: 'BBH Sans Bogle', Arial, sans-serif;
 }
 
-header nav a:hover {
+.nav-table a:hover {
     color: #ff0000;
 }
 
@@ -139,10 +143,10 @@ header nav a:hover {
     background-color: rgba(50, 50, 50, 0.9);
     border-radius: 8px;
     overflow: hidden;
-    
 }
 
-.table-base th, .table-base td {
+.table-base th,
+.table-base td {
     border: 1px solid #555;
     padding: 12px;
 }
@@ -161,7 +165,8 @@ header nav a:hover {
     overflow: hidden;
 }
 
-.bio-table th, .bio-table td {
+.bio-table th,
+.bio-table td {
     border: 1px solid #555;
     padding: 12px;
     text-align: left;
@@ -173,18 +178,20 @@ header nav a:hover {
     font-family: 'BBH Sans Bogle', Arial, sans-serif;
 }
 
-.equipment-table, .operators-table {
+.equipment-table,
+.operators-table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     background-color: rgba(50, 50, 50, 0.9);
     border-radius: 8px;
     overflow: hidden;
-
 }
 
-.equipment-table th, .equipment-table td,
-.operators-table th, .operators-table td {
+.equipment-table th,
+.equipment-table td,
+.operators-table th,
+.operators-table td {
     border: 1px solid #555;
     padding: 12px;
     text-align: center;
@@ -299,7 +306,6 @@ table caption {
     font-size: 12px;
     white-space: nowrap;
     opacity: 0;
-    
     pointer-events: none;
     font-family: 'BBH Sans Bogle', Arial, sans-serif;
 }
@@ -387,7 +393,6 @@ fieldset {
     border-radius: 8px;
     font-family: 'BBH Sans Bogle', Arial, sans-serif;
 }
-
 
 .video-player {
     width: 1000px;
