@@ -1,11 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW2</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="img/tach.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
+    <title>Tachanka</title>
 </head>
+
 <body>
+    <header>
+        <a name="top"></a>
+        <nav>
+            <table class="nav-table">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="6">
+                            Menu
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a href="#tachanka">Tachanka</a></th>
+                        <td><a href="#biography">Биография</a></td>
+                        <td><a href="#equipment">Снаряжение</a></td>
+                        <td><a href="#view">Вид</a></td>
+                        <td><a href="#other">Другие Оперативники</a></td>
+                        <td><a href="#video">Видео</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </nav>
+    </header>
+
+    <main>
+        <article id="tachanka">
+            <header>
+                <h1>Tachanka</h1>
+                <figure>
+                    <img src="img/pink-bkg.jpg" alt="Тачанка" class="img large">
+                    <figcaption>Tachanka Pony в форме</figcaption>
+                </figure>
+                <aside>
+                    <blockquote class="tachanka-quote">
+                        We're not out of the woods, bratan.
+                        <footer> -Tachanka</footer>
+                    </blockquote>
+                </aside>
+            </header>
+            <nav>
+                <a href="#top" class="nav-link">↑ Наверх</a>
+            </nav>
+        </article>
+
+        <article id="biography">
+            <header>
+                <h2>Биография Александра "Тачанка" Сенавьева</h2>
+            </header>
+            <table class="bio-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Параметр</th>
+                        <th scope="col">Значение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Настоящее имя</strong></td>
+                        <td>Александр Сенавьев</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Позывной:</strong></td>
+                        <td><mark>Tachanka</mark></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Дата рождения:</strong></td>
+                        <td><time datetime="1967-11-03">3 ноября 1967 года</time></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Место рождения:</strong></td>
+                        <td>Санкт-Петербург, Россия</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Подразделение:</strong></td>
+                        <td><abbr title="Специального Назначения">Spetsnaz</abbr></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Рост:</strong></td>
+                        <td>1,83 м</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Сторона:</strong></td>
+                        <td>Защита</td>
+                    </tr>
+                </tbody>
+            </table>
+            <section>
+                <h3>Военная карьера</h3>
+                <p>B восемнадцать лет - в момент завершения военных действий в Афганистане - Александр
+                    Сенавьев по призыву попал в армию и спустя два года службы решил остаться в ней. Он
+                    входил в команду борцов и благодаря комплекции и тактике смог завоевать несколько
+                    наград. Помимо обращения c тяжелой артиллерией Сенавьев изучил стратегии штурма и
+                    обороны и стал оружейным специалистом-инструментальщиком. Он подавал запрос на
+                    перевод на флот, но в итоге остался в сухопутных войсках (причины засекречены).</p>
+
+                <details>
+                    <summary>Дополнительная информация o службе</summary>
+                    <p>Сенавьев прошел обучение в <mark>Высшем военном командном училище</mark> и
+                        специализировался на оборонительных тактиках. Его уникальные навыки работы с
+                        пулеметами сделали его незаменимым специалистом в операциях по удержанию
+                        позиций.</p>
+                </details>
+            </section>
+            <nav>
+                <a href="#top" class="nav-link">↑ Наверх</a>
+            </nav>
+        </article>
+
+        <article id="equipment">
+            <header>
+                <h2>Снаряжение и вооружение</h2>
+            </header>
+            <table class="equipment-table">
+                <caption>Выбор экипировки оперативника</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Основное оружие</th>
+                        <th scope="col">Дополнительное оружие</th>
+                        <th scope="col">Устройства</th>
+                        <th scope="col">Особый навык</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">
+                            <figure>
+                                <img src="img/DP27.jpg" alt="DP27" class="img medium">
+                                <figcaption>Пулемёт ДП-27</figcaption>
+                            </figure>
+                            <label><input type="radio" name="choice1" value="1"> DP27</label>
+                            <figure>
+                                <img src="img/9X.jpg" alt="9x19VSN" class="img medium">
+                                <figcaption>Автомат 9x19VSN</figcaption>
+                            </figure>
+                            <label><input type="radio" name="choice1" value="2"> 9x19VSN</label>
+                        </td>
+                        <td scope="row">
+                            <figure>
+                                <img src="img/PMM.jpg" alt="PMM" class="img small">
+                                <figcaption>PMM</figcaption>
+                            </figure>
+                            <label><input type="radio" name="choice2" value="3"> PMM</label>
+                            <figure>
+                                <img src="img/GSH18.jpg" alt="GSH18" class="img small">
+                                <figcaption>GSH-18</figcaption>
+                            </figure>
+                            <label><input type="radio" name="choice2" value="4"> GSH-18</label>
+                            <figure>
+                                <img src="img/BEARING.jpg" alt="BEARING" class="img small">
+                                <figcaption>ПП Bearing 9</figcaption>
+                            </figure>
+                            <label><input type="radio" name="choice2" value="5">ПП Bearing 9</label>
+                        </td>
+                        <td scope="row">
+                            <figure>
+                                <img src="img/wire.jpg" alt="wire" class="img square">
+                                <figcaption>Колючая проволока</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/shield.jpg" alt="shield" class="img square">
+                                <figcaption>Стационарный щит</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/dec.jpg" alt="dec" class="img square">
+                                <figcaption>Датчик приближения</figcaption>
+                            </figure>
+                            <select name="Device">
+                                <option selected>Выберите устройство</option>
+                                <option value="Колючая проволока">Колючая проволока</option>
+                                <option value="Стационарный щит">Стационарный щит</option>
+                                <option value="Датчик приближения">Датчик приближения</option>
+                            </select>
+                        </td>
+                        <td scope="row">
+                            <figure>
+                                <img src="img/Granate.jpg" alt="Granate" class="img special">
+                                <figcaption>Гранотомёт Шумиха</figcaption>
+                            </figure>
+                            <label>
+                                <input type="checkbox" name="choice4" value="9"> Гранотомёт
+                                Шумиха
+                            </label>
+                            <br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav>
+                <a href="#top" class="nav-link">↑ Наверх</a>
+            </nav>
+        </article>
+
+        <article id="view">
+            <header>
+                <h2>Внешний вид и униформа</h2>
+            </header>
+            <h4>Выберите пожалуйста все варианты</h4>
+            <form>
+                <fieldset>
+                    <legend>Варианты кастомизации</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Helmet" value="1"> Единорожкин
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Uniform" value="2"> Сингифер
+                                легиона
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Weapon" value="3"> BEARING
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+            <button onclick="location.href='#resultImage'" class="custom-button">Показать результат</button>
+            <nav>
+                <a href="#top" class="nav-link">↑ Наверх</a>
+            </nav>
+        </article>
+
+        <article id="other">
+            <header>
+                <h2>Другие оперативники Spetsnaz</h2>
+            </header>
+            <table class="operators-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Оперативник</th>
+                        <th scope="col">Сторона</th>
+                        <th scope="col">Специализация</th>
+                        <th scope="col">Уникальное снаряжение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <figure>
+                                <img src="img/kapkan.jpg" alt="Kapkan" class="img operator">
+                            </figure>
+                            <strong>Kapkan</strong>
+                        </th>
+                        <td>Защита</td>
+                        <td>Укрепление позиции</td>
+                        <td>Взрывное устройство "Kapkan"</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="audio-button-container">
+                            <figure class="operator-with-audio">
+                                <button onclick="this.nextElementSibling.play()" class="image-button">
+                                    <img src="img/Fuze.jpg" alt="Fuze" class="img operator">
+                                </button>
+                                <audio class="hidden-audio">
+                                    <source src="audio/Haha.mp3" type="audio/mpeg">
+                                </audio>
+                                <figcaption><strong>Fuze</strong>(можно нажимать)</figcaption>
+                            </figure>
+                        </th>
+                        <td>Атака</td>
+                        <td>Пробитие укреплений</td>
+                        <td>Кассетный заряд</td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav>
+                <a href="#top" class="nav-link">↑ Наверх</a>
+            </nav>
+        </article>
+
+        <article id="video">
+            <header>
+                <h3>Видео показывающее <s>скрытность</s> Tachanka</h3>
+            </header>
+            <video src="video/Fun.mp4" class="video-player" controls>
+            </video>
+            <nav>
+                <a href="#top" class="nav-link">↑ Наверх</a>
+            </nav>
+        </article>
+
+        <footer id="resultImage">
+            <figure>
+                <figcaption>Результат вашей кастомизации оперативника</figcaption>
+                <img src="img/Pony.jpg" alt="Результат выбора" class="img result">
+            </figure>
+        </footer>
+    </main>
+
+    <footer class="site-footer">
+        <h4>Напишите пожалуйста про какого оперативника ещё хотите узнать и укажите Ваш email</h4>
+        <form method="post">
+            <input type="text" required placeholder="Оперативник" class="form-input"><br>
+            <input type="email" placeholder="email" required class="form-input"><br>
+            <button type="submit" class="form-button">Отправить</button>
+            <button type="reset" class="form-button">Сбросить</button>
+        </form>
+        <h3>Спасибо что посетили мой сайт</h3>
+        <p>2025 By Alexey Mitropolov</p>
+        <nav>
+            <a href="#top" class="nav-link">↑ Наверх</a>
+        </nav>
+    </footer>
 
 </body>
+
 </html>
